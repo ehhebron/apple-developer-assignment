@@ -15,7 +15,7 @@
     padding-top: 50px; 
 
     li {
-      // font-size: 16px;
+      color: #9C9C9C;
       list-style-type: none;
       padding-bottom: 8px;
       user-select: none;
@@ -24,6 +24,10 @@
       &:hover {
         color: #4084BA;
         cursor: pointer;
+      }
+
+      &.selectedCity {
+        color: #000000;
       }
 
       &.selectedCity:hover {
