@@ -1,0 +1,39 @@
+{
+  "cities": [
+    {
+      "section": "cupertino",
+      "label": "Cupertino",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "section": "new-york-city",
+      "label": "New York City",
+      "timezone": "America/New_York"
+    },
+    {
+      "section": "london",
+      "label": "London",
+      "timezone": "Europe/London"
+    },
+    {
+      "section": "amsterdam",
+      "label": "Amsterdam",
+      "timezone": "Europe/Amsterdam"
+    },
+    {
+      "section": "tokyo",
+      "label": "Tokyo",
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "section": "hong-kong",
+      "label": "Hong Kong",
+      "timezone": "Asia/Hong_Kong"
+    },
+    {
+      "section": "sydney",
+      "label": "Sydney",
+      "timezone": "Australia/Sydney"
+    }
+  ]
+}
