@@ -1,9 +1,9 @@
 # Apple Retail In-Store Developer Exercise 
 # Getting started 
 
-1. Checkout code: https://github.com/ehhebron/apple-developer-assignment.git
+1. Checkout code: git clone https://github.com/ehhebron/apple-developer-assignment.git
 1. Navigate inside the folder: `cd apple-developer-assignment`
-1. Install the node modules: `node install`
+1. Install the node modules: `npm install`
 1. Run the code in dev mode: `npm start` 
 
 ### `npm start`
