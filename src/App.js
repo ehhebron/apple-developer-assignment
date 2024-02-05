@@ -61,17 +61,24 @@ export default function App() {
   }
 
   // Fetches the current time based on the specified timezone from a world time API 
-  const updateLocalTime = () => {
-    fetch(`http://worldtimeapi.org/api/timezone/${timezone}/`)
-        .then((res) => res.json())
-        .then((json) => {
-            const time = json.datetime.split("T")[1].split(".")[0];
-            const [hour, minutes] = time.split(":");
-            const formattedTime = formatTime(hour, minutes);
-            setTime(formattedTime);
-        })
-        .catch((error) => console.error("Error fetching time:", error));
-  };
+  const updateLocalTime = async () => {
+    try {
+        const response = await fetch(`http://worldtimeapi.org/api/timezone/${timezone}/`);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const json = await response.json();
+        const time = json.datetime.split("T")[1].split(".")[0];
+        const [hour, minutes] = time.split(":");
+        const formattedTime = formatTime(hour, minutes);
+        setTime(formattedTime);
+    } catch (error) {
+        console.error("Error fetching time:", error.message);
+        // Handle the error or log it appropriately
+    }
+};
 
   // Initialize component 
   useEffect(() => {
